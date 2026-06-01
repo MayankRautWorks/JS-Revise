@@ -97,3 +97,15 @@ let StrNum = Number(Numbar)
 
 //--------------------------------------Tricky Interview Questions Baki hai ----------------------------------------------------//
 
+//[] == false   Output =>  True " sabse pahale js false se start start  karta  hain srung ko apne initial value me badlata hai uski initial value 0 ho jati hai uski baad left side me khudko badalta hai vha vo arrey ko to string ke madat se string me badalta hai fir final output ""==0 fir string ko js 0 me badaldeta hai to final output 0==0 ye true hota hain
+// 
+
+// console.log("" === 0)  Output => True "isme Srting ki value 0 ho jati hai to v 0===0 hota jata hai is liye true banta ha"
+
+//" \t\n" == 0    OutPut => True "js kisi bhi string ko num me badalte wkt uske age piche ke sare whitespace trim ata hai (spaces,tabs,\t,newline \n)in sab ko ye sab nikalne ke baad  khli "" rah jati hai fir fir khali string number me conver ho kar number me conver ho jati hai fir banta hai 0==0"
+
+//[] == 0 Output => True "js array ko tab tak change karne ki koshish karts hai jab tak value num me nhi badalti to js pahale tostring ke madat se array ko srinh me badalta hain fir fir khali sring ko num num ber me convert karta hain to uski value hoi hai 0 to 0==0 true hoti hain "
+
+//[1] == 1 Output => True "is me bhi vesi hi method chal rhi hai  array string me badal lita hai hai to uski value "1" ho jati hai fir string koo number me convert kiya jata hai au value num me ati hai to hu 1==1   "
+
+//[1,2] == "1,2" Output => True  "js arrey object ko  string me badal deta hai uska outut hota hai "1,2"fir "1,2"=="1,2"ye brabar hue iss liye ture hota hai"
