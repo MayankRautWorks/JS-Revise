@@ -326,7 +326,7 @@
 
 
 // 4. Chaining Questions
-// Q14
+// Q14----------------------------------------=======================================8++++++++++++-----------------------------------------
 // [1,2,3,4,5,6,7,8]
 // keep even numbers
 // square them
@@ -335,11 +335,23 @@
 
 // [4,16,36,64]
 
-let ChangeingQue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+// let result = []
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//         result.push(arr[i] * arr[i])
+//     }
+// }
+// console.log(result)
 
-let Evensquare = ChangeingQue.map((num) => {
-    if (num % 2 === 0) {
-        return "even"
-    } 
-})
-console.log(Evensquare)
+
+// Q15---------------------------------------------------+++++++++++++++++++++++++++-----------------------------------------------------------------------------
+// [" apple ", "banana ", " mango"]
+// trim all strings
+// convert uppercase
+// keep only words with length > 5
+
+// Expected:
+
+// ["BANANA"]
+
