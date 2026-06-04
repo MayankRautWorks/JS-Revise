@@ -160,19 +160,23 @@ let AddGst = prices.map((gst) => {
 //  mango:1
 // }
 
-// let fruits = ["apple", "banana", "apple", "mango", "banana", "apple"];
+// let fruits = ["apple", "banana", "apple", "mango", "banana", "apple", 'Sam'];
+
+// let ans = {name:"Samay"}
+
+// for (let i = 0;i < fruits.length;i++){
+//     if(ans[fruits[i]]){
+//         ans[fruits[i]] = ans[fruits[i]]+1
+//     } else{
+//         ans[fruits[i]]=1
+//     }
+// }
+
+// // ans.name = "ansh"
+// console.log(ans);
 
 
-// let CountFurits = fruits.reduce((acc, curr) => {
-
-
-
-// }, {})
-// console.log(CountFurits);
-
-
-
-// Q7 — Find Highest Salary Employee ----------------------------------------NOT COMPLETED ------------------------------------------------------------------------------------------------
+// Q7 — Find Highest Salary Employee --------
 // let employees = [
 //   {name:"Aman", salary:25000},
 //   {name:"Rahul", salary:40000},
@@ -187,14 +191,21 @@ let AddGst = prices.map((gst) => {
 //     { name: "Mayank", salary: 35000 }
 // ];
 
-// let highsalary = employees.reduce((acc, curr) => {
-//     return (acc.salary > curr.salary)
-// }, 0)
-// console.log(highsalary)
+// let highSalary = 0;
+// let a = {}
+
+// for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].salary > highSalary) {
+//         highSalary = employees[i].salary
+//         a = employees[i]
+//     }
+// }
+
+// console.log(highSalary)
 
 
 
-// Q8 — Group Users by Age
+// Q8 — Group Users by Age  ------------------------------------------------------------group Age--------------------------------------------------------------------------------
 // let users = [
 //   {name:"A", age:20},
 //   {name:"B", age:25},
@@ -210,4 +221,138 @@ let AddGst = prices.map((gst) => {
 // }
 
 
+
+// let users = [
+//     { name: "A", age: 20 },
+//     { name: "B", age: 25 },
+//     { name: "C", age: 20 },
+//     { name: "D", age: 25 }
+// ];
+
+
+// let usersAge = users.reduce((acc, cur) => {
+//     let age = cur.age
+//     acc[age] = (acc[age] || []).concat(cur);
+//     return acc
+// }, {})
+
+// console.log(usersAge);
+
+
+
+// Q9 — Remove Duplicate Objects ------------------------ Remove Duplicate Objects--------------------------------------
+// let users = [             ++++++++++++++++++++++++++NOT COMPLETED+++++++++++++++++++++++++++++++++++++++++++++++++++
+//   {id:1, name:"A"},
+//   {id:2, name:"B"},
+//   {id:1, name:"A"}
+// ];
+
+// Remove duplicate objects based on id.
+
+
+// let users = [
+//     { id: 1, name: "A" },
+//     { id: 2, name: "B" },
+//     { id: 1, name: "A" }
+// ];
+
+// for (let i = 0; i < users.length; i++) {
+
+//     console.log(users)
+// }
+
+
+// Q10 — Average Marks -------------------------------Average marks ---------------------------------------0
+// let students = [
+//   {name:"A", marks:70},
+//   {name:"B", marks:80},
+//   {name:"C", marks:90}
+// ];
+
+// Find average marks.
+
+// let students = [
+//     { name: "A", marks: 70 },
+//     { name: "B", marks: 80 },
+//     { name: "C", marks: 90 }
+// ];
+// let findAverage = students.reduce((sum, student) => sum + student.marks, 0)
+// let avg = findAverage / students.length
+
+// console.log(avg);
+
+
+// Q11 — Flatten Products ----------------------------Flatten Products --------------------------------
+// let data = [
+//   {
+//     category:"Electronics",
+//     items:["Laptop","Phone"]
+//   },
+//   {
+//     category:"Clothes",
+//     items:["Shirt","Jeans"]
+//   }
+// ];
+
+// Expected:
+
+// ["Laptop","Phone","Shirt","Jeans"]
+
+let data = [
+    {
+        category: "Electronics",
+        items: ["Laptop", "Phone"]
+    },
+    {
+        category: "Clothes",
+        items: ["Shirt", "Jeans"]
+    }
+];
+// let result = []
+
+// for (let i = 0; i < data.length; i++) {
+//     for (let j = 0; j < data[i].items.length; j++) {
+//         result.push(data[i].items[j])
+//     }
+// }
+// console.log(result);
+
+
+
+
+// Q12 — Total Cart Price--------------------------------12Total Cart Price -------------------------------------------------------
+// let cart = [
+//   {name:"Shoes", price:2000, qty:2},
+//   {name:"Watch", price:3000, qty:1},
+//   {name:"Cap", price:500, qty:3}   
+
+// ];
+
+// Find total cart value.
+
+// Expected:
+
+// 8500
+
+// let cart = [
+//     { name: "Shoes", price: 2000, qty: 2 },
+//     { name: "Watch", price: 3000, qty: 1 },
+//     { name: "Cap", price: 500, qty: 3 }
+
+// ];
+
+// let Count = cart.reduce((Acc, num) => {
+//     return Acc + (num.price * num.qty)
+
+// }, 0)
+// console.log(Count);
+
+
+
+// Q13 — Find Duplicate Values------------------------- Q13 — Find Duplicate Values-----------------------------------
+// [1,2,3,2,4,5,1,6]
+
+// Expected:
+
+// [1,2]
 
