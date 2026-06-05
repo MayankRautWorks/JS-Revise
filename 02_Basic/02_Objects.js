@@ -176,7 +176,7 @@ let AddGst = prices.map((gst) => {
 // console.log(ans);
 
 
-// Q7 — Find Highest Salary Employee --------
+// Q7 — Find Highest Salary Employee ------------------------------------------------------------------
 // let employees = [
 //   {name:"Aman", salary:25000},
 //   {name:"Rahul", salary:40000},
@@ -356,3 +356,116 @@ let data = [
 
 // [1,2]
 
+// let numObj = [1, 2, 3, 2, 4, 5, 1, 6]
+
+// let Count = {}
+// let duplicate = []
+
+// let DuplicateNum = numObj.map((num) => {
+//     Count[num] = (Count[num] || 0) + 1
+//     if (Count[num] === 2) {
+//         duplicate.push(num)
+//     }
+// })
+// console.log(duplicate);
+
+
+
+// Q14 — Sort by Marks Descending----------------------- Q14 — Sort by Marks Descending--------------------------------------
+// let students = [
+//   {name:"A", marks:60},
+//   {name:"B", marks:90},
+//   {name:"C", marks:75}
+// ];
+
+// Sort highest to lowest.
+
+let students = [
+    { name: "A", marks: 60 },
+    { name: "B", marks: 90 },
+    { name: "C", marks: 75 }
+];
+
+// let findHignest = students.reduce((acc, cur) => {
+//     let find = acc.findIndex(s => cur.marks > s.marks)
+//     if (acc == -1) {
+//         return cur.marks
+
+//     }
+// }, 0)
+// console.log(findHignest);
+
+
+
+
+
+
+
+//     Question 6
+// const employees = [
+//   { name: "Mayank", salary: 50000 },
+//   { name: "Rahul", salary: 25000 },
+//   { name: "Aman", salary: 70000 }
+// ]
+
+// Question:
+// Sirf un employees ke names chahiye jinki salary 40000 se jyada hai.
+
+// Expected output:
+
+// ["Mayank", "Aman"]
+
+// Ab bina pura code likhe:
+// const employees = [
+//     { name: "Mayank", salary: 50000 },
+//     { name: "Rahul", salary: 25000 },
+//     { name: "Aman", salary: 70000 }
+// ]
+
+// const filtered = employees.filter((emp) => emp.salary > 40000)
+// const names = filtered.map((emp) => emp.name)
+
+
+// console.log(names);
+
+
+
+// Q15 — Convert Array to Object
+// [
+//  ["name","Mayank"],
+//  ["age",20],
+//  ["city","Pune"]
+// ]
+
+// Expected:
+
+// {
+//  name:"Mayank",
+//  age:20,
+//  city:"Pune"
+// }
+
+
+// let data2 = [
+//     ["name", "Mayank"],
+//     ["age", 20],
+//     ["city", "Pune"]
+// ]
+// let ans = {}
+// for (let i = 0; i < data2.length; i++) {
+//     ans[data2[i][0]] = data2[i][1]
+// }
+// console.log(ans);
+
+
+
+let datad = {}
+datad["name"] = "mayank",
+    datad.surname = "raut",
+    datad["age"] = 20
+datad.city = "nagpur"
+
+
+
+
+console.log(datad);
