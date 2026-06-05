@@ -337,3 +337,59 @@
 
 // console.log(user[field]);
 
+
+// 💡 Mini Practice Challenge
+// Challenge Q1============================💡 Mini Practice Challenge=========================================================
+// let user = {
+//   name: "Mayank",
+//   age: 20
+// };
+
+// 👉 Convert into:
+
+// name → MAYANK
+// age → 21
+
+// let user = {
+//     name: "Mayank",
+//     age: 20
+// };
+// user.name = user.name.toUpperCase()
+// user.age = user.age + 1
+// console.log(user);
+
+
+// Challenge Q2=============================💡 Mini Practice Challenge============================================================
+// let key = "city";
+
+// 👉 Create object dynamically and assign "Pune"
+
+
+// let key = "city"
+// let obj = {}
+// obj[key] = "pune"
+// console.log(obj);
+
+
+// Challenge Q3 =====================================💡 Mini Practice ChallengeChallenge Q3=======================================
+// let user = {
+//   name: "Mayank",
+//   age: 20
+// };
+
+// 👉 Print all keys dynamically (hint: Object.keys + loop)
+
+
+// let user = {
+//     name: "Mayank",
+//     age: 20,
+//     dob: 1 / 4 / 2005,
+//     city: "pune"
+// };
+
+// let ans = Object.values(user)
+
+// for (let i = 0; i < ans.length; i++) {
+//     console.log(ans[i])
+// }
+

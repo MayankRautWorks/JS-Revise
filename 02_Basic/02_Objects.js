@@ -459,13 +459,14 @@ let students = [
 
 
 
-let datad = {}
-datad["name"] = "mayank",
-    datad.surname = "raut",
-    datad["age"] = 20
-datad.city = "nagpur"
+// let datad = {}
+// datad["name"] = "mayank",
+//     datad.surname = "raut",
+//     datad["age"] = 20
+// datad.city = "nagpur"
 
 
 
 
-console.log(datad);
+// console.log(datad);
+

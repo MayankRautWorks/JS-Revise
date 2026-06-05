@@ -355,3 +355,18 @@
 
 // ["BANANA"]
 
+
+
+
+
+
+// --------------------------------------------------Ansh Practice-------------------------------------
+let users = [
+    { name: "Mayank", age: 20 },
+    { name: "Rahul", age: 17 },
+    { name: "Aman", age: 22 }
+]
+
+let ages = users.filter((user) => user.age >= 18)
+console.log(ages);
+
