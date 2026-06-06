@@ -8,6 +8,7 @@
 // Object.assign(target, source)Object copy / merge
 // Object.freeze(obj)Object ko immutable banao
 // Object.hasOwn(obj, key)Property exist karti hai ?
+// Object.fromEntries() conveert ary to string 
 
 
 
@@ -380,11 +381,11 @@ let data = [
 
 // Sort highest to lowest.
 
-let students = [
-    { name: "A", marks: 60 },
-    { name: "B", marks: 90 },
-    { name: "C", marks: 75 }
-];
+// let students = [
+//     { name: "A", marks: 60 },
+//     { name: "B", marks: 90 },
+//     { name: "C", marks: 75 }
+// ];
 
 // let findHignest = students.reduce((acc, cur) => {
 //     let find = acc.findIndex(s => cur.marks > s.marks)
@@ -469,4 +470,19 @@ let students = [
 
 
 // console.log(datad);
+
+let name = "samay"; // Convert this string into UpperCase without inbuild methods like to UpperCase()
+let str = name.split("")
+let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+let Lowercasee = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+for (let i = 0; i < str.length; i++) {
+    for (let j = 0; j < Lowercasee.length; j++) {
+        return str[i] == Lowercasee[j]
+    }
+
+    console.log(str)
+}
+
+
+
 

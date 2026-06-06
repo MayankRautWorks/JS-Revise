@@ -380,16 +380,357 @@
 // 👉 Print all keys dynamically (hint: Object.keys + loop)
 
 
-// let user = {
+// let user1 = {
 //     name: "Mayank",
 //     age: 20,
 //     dob: 1 / 4 / 2005,
 //     city: "pune"
 // };
 
-// let ans = Object.values(user)
+// let ans1 = Object.values(user1)
 
-// for (let i = 0; i < ans.length; i++) {
-//     console.log(ans[i])
+// for (let i = 0; i < ans1.length; i++) {
+//     // console.log(ans1[i])
 // }
 
+
+
+// Object Practice Questions — Beginner to Intermediate
+
+
+// 1. Dynamic Property Access
+// Q1  =======================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   age: 20,
+//   city: "Pune"
+// };
+
+// let key = "city";
+
+// 👉 Print value using variable key.
+
+// Expected Output:
+// Pune
+
+
+
+// let user = {
+//     name: "Mayank",
+//     age: 20,
+//     city: "Pune"
+// };
+// let key = "city";
+
+// console.log(user[key]);
+
+
+// 2. Add Property Dynamically
+// Q2============================================================================================================================
+// let user = {
+//   name: "Mayank"
+// };
+
+// let key = "age";
+// let value = 21;
+
+// 👉 Add property dynamically.
+
+// Expected Object:
+// {
+//   name: "Mayank",
+//   age: 21
+// }
+
+// let user = {
+//     name: "Mayank"
+// };
+
+// let key = "age";
+// let value = 21;
+
+// user[key] = value
+
+// console.log(user);
+
+// 3. Loop Through Object
+// Q3===========================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   age: 20,
+//   city: "Pune"
+// };
+
+// 👉 Print:
+
+// name : Mayank
+// age : 20
+// city : Pune
+
+// (using loop)
+
+
+// let user = {
+//     name: "Mayank",
+//     age: 20,
+//     city: "Pune"
+// };
+
+
+// 4. Count Properties
+// Q4
+// let obj = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+//   d: 4
+// };
+
+// 👉 Find total number of keys.
+
+// Expected Output:
+// 4
+
+
+let obj = {
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4
+};
+
+
+
+// console.log(Object.keys(obj).length);
+
+
+// 5. Check Key Exists
+// Q5=============================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   age: 20
+// };
+
+// 👉 Check if "city" exists.
+
+// Expected Output:
+// false
+
+
+
+
+// let user = {
+//     name: "Mayank",
+//     age: 20
+// };
+
+
+// console.log(Object.hasOwn(user, "city"))
+
+
+// 6. Convert Keys to Uppercase
+// Q6================================================Not Complted=========================================================
+// let user = {
+//   name: "Mayank",
+//   city: "Pune"
+// };
+
+// 👉 Convert object into:
+
+// {
+//   NAME: "Mayank",
+//   CITY: "Pune"
+// }
+
+// let user = {
+//     name: "Mayank",
+//     city: "Pune"
+// };
+
+// let upCase = Object.hasOwn(user, key)
+// console.log(user.upCase)
+
+// console.log()
+
+// 7. Sum All Values
+// Q7=======================================================================================================================
+// let marks = {
+//   math: 80,
+//   english: 70,
+//   science: 90
+// };
+
+// 👉 Find total marks.
+
+// Expected Output:
+// 240
+
+// let marks = {
+//     math: 80,
+//     english: 70,
+//     science: 90
+// };
+// let add = Object.values(marks).reduce((acc, cur) => acc + cur, 0)
+// console.log(add);
+
+
+// 8. Nested Object Access
+// Q8 ============================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   address: {
+//     city: "Pune",
+//     pincode: 422003
+//   }
+// };
+
+// 👉 Print city.
+
+// Expected Output:
+// Pune
+
+// let user = {
+//     name: "Mayank",
+//     address: {
+//         city: "Pune",
+//         pincode: 422003
+//     }
+// };
+// console.log(user.address.city)
+
+
+
+
+// 9. Update Nested Value
+// Q9===========================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   address: {
+//     city: "Pune"
+//   }
+// };
+
+// 👉 Change city to "Mumbai".
+
+// Expected Object:
+// {
+//   name: "Mayank",
+//   address: {
+//     city: "Mumbai"
+//   }
+// }
+
+// let user = {
+//     name: "Mayank",
+//     address: {
+//         city: "Pune"
+//     }
+// };
+
+// user.address.city = "mumbai"
+
+// console.log(user);
+
+
+// 10. Delete Nested Property
+// Q10============================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   address: {
+//     city: "Pune",
+//     pincode: 422003
+//   }
+// };
+
+// 👉 Delete pincode.
+
+
+// let user = {
+//     name: "Mayank",
+//     address: {
+//         city: "Pune",
+//         pincode: 422003
+//     }
+// };
+
+// delete user.address.pincode
+
+// console.log(user);
+
+
+// 11. Object to Array
+// Q11============================================================================================================================
+// let user = {
+//   name: "Mayank",
+//   age: 20
+// };
+
+// 👉 Convert into:
+
+// [
+//   ["name", "Mayank"],
+//   ["age", 20]
+// ]
+
+// let user = {
+//     name: "Mayank",
+//     age: 20
+// };
+
+// let arr = Object.entries(user)
+// console.log(arr);
+
+
+// 12. Array to Object
+// Q12============================================================================================================================
+// let arr = [
+//   ["name", "Mayank"],
+//   ["age", 20]
+// ];
+
+// 👉 Convert into object.
+
+// Expected:
+// {
+//   name: "Mayank",
+//   age: 20
+// }
+
+
+// let arr = [
+//     ["name", "Mayank"],
+//     ["age", 20]
+// ];
+
+
+
+
+
+// console.log(Object.fromEntries(arr));
+
+
+
+// 13. Find Highest Value
+// Q13============================================================================================================================
+// let scores = {
+//   math: 95,
+//   english: 88,
+//   science: 91
+// };
+
+// 👉 Find highest score.
+
+// Expected Output:
+// 95
+
+let scores = {
+    math: 95,
+    english: 88,
+    science: 91
+};
+
+let keys = Object.values(scores)
+
+
+
+console.log(keys);
